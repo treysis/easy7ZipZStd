@@ -371,6 +371,8 @@ void CPanel::Properties()
     message.Title = LangString(IDS_PROPERTIES);
     message.NumColumns = 2;
     message.Create(GetParent());
+
+    ::MessageBoxW(*(this), message, LangString(IDS_PROPERTIES), MB_OK | MB_ICONINFORMATION);
   }
 }
 
