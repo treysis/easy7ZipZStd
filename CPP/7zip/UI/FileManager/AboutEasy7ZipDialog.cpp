@@ -5,7 +5,7 @@
 
 #include "HelpUtils.h"
 
-static LPCWSTR kHelpTopic = L"start.htm";
+#define kHelpTopic "start.htm"
 
 bool CAboutEasy7ZipDialog::OnInit()
 {
@@ -15,7 +15,7 @@ bool CAboutEasy7ZipDialog::OnInit()
 
 void CAboutEasy7ZipDialog::OnHelp()
 {
-  ShowHelpWindow(NULL, kHelpTopic);
+  ShowHelpWindow(kHelpTopic);
 }
 
 bool CAboutEasy7ZipDialog::OnButtonClicked(int buttonID, HWND buttonHWND)

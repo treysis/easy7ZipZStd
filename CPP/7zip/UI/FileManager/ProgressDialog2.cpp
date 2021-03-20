@@ -1451,7 +1451,7 @@ bool CProgressDialog::OnButtonClicked(int buttonID, HWND buttonHWND)
       if (!paused)
         OnPauseButton();
       _inCancelMessageBox = true;
-      int res = ::MessageBoxW(*this, LangString(IDS_PROGRESS_ASK_CANCEL), _title, MB_YESNOQUESTION);
+      int res = ::MessageBoxW(*this, LangString(IDS_PROGRESS_ASK_CANCEL), _title, MB_YESNO | MB_ICONQUESTION);
       _inCancelMessageBox = false;
       if (!paused)
         OnPauseButton();

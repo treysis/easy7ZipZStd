@@ -15,6 +15,7 @@
 #include "../FileManager/LangUtils.h"
 #include "../FileManager/resourceGui.h"
 #include "../FileManager/OverwriteDialogRes.h"
+#include "../FileManager/ViewSettings.h"
 
 #include "../Common/ArchiveExtractCallback.h"
 #include "../Common/PropIDUtils.h"

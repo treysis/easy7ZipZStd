@@ -118,5 +118,4 @@ bool ReadOptOpenOutputFolder();
 void SaveOptClose7Zip(bool bClose7Zip);
 bool ReadOptClose7Zip();
 
-
 #endif

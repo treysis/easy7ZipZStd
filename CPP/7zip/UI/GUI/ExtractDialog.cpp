@@ -242,20 +242,16 @@ bool CExtractDialog::OnInit()
   */
 
   #ifndef _SFX
-
   m_bOpenOutputFolder = ReadOptOpenOutputFolder();
   CheckButton(IDC_EXTRACT_CHECK_OPEN_OUTPUT_FOLDER, m_bOpenOutputFolder);
-
   #endif
 
   #ifndef _SFX
-
   _pathMode.Attach(GetItem(IDC_EXTRACT_PATH_MODE));
   _overwriteMode.Attach(GetItem(IDC_EXTRACT_OVERWRITE_MODE));
 
   AddComboItems(_pathMode, kPathMode_IDs, ARRAY_SIZE(kPathMode_IDs), kPathModeButtonsVals, PathMode);
   AddComboItems(_overwriteMode, kOverwriteMode_IDs, ARRAY_SIZE(kOverwriteMode_IDs), kOverwriteButtonsVals, OverwriteMode);
-
   #endif
 
   HICON icon = LoadIcon(g_hInstance, MAKEINTRESOURCE(IDI_ICON));
